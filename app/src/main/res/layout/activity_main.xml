@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_width="4dp"
+        app:civ_border_color="#FF000000"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/imageView"
+        android:layout_width="149dp"
+        android:layout_height="146dp"
+        android:contentDescription="@string/gambar"
+        android:cropToPadding="false"
+        android:src="@drawable/star_wars"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:background="@drawable/border"
+        android:focusable="true"
+        android:padding="8dp"
+        android:layout_marginLeft="7pt"
+        android:layout_marginRight="7pt"
+        android:layout_marginTop="10pt"
+        />
+    <EditText
+        android:id="@+id/txtPassword"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:background="@drawable/border"
+        android:focusable="true"
+        android:padding="8dp"
+        android:layout_marginLeft="7pt"
+        android:layout_marginRight="7pt"
+        android:layout_marginTop="10pt"
+        />
+
+
+    <Button
+        android:id="@+id/btnPassword"
+        android:background="@drawable/border"
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:padding="7dp"
+        />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tidak punya akun? daftar disini"
+        android:textSize="4pt"/>
+
+</LinearLayout>
